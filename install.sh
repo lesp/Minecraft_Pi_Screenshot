@@ -29,8 +29,8 @@ if (whiptail --title "Install raspi2png" --yesno "Choose Yes to install and No t
 	cd raspi2png
 	wget https://github.com/AndrewFromMelbourne/raspi2png/archive/master.zip
 	unzip -j master.zip
-	cp raspi2png /usr/bin/
-	chmod +x /usr/bin/raspi2png
+	sudo cp raspi2png /usr/bin/
+	sudo chmod +x /usr/bin/raspi2png
 	
 	whiptail --title "Installation complete" --msgbox "To take a screenshot 
 	Usage: raspi2png [--pngname name] [--width <width>] [--height <height>] [--compression <level>] [--delay <delay>] [--display <number>] [--stdout] [--help]
