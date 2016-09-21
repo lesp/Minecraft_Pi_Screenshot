@@ -25,11 +25,11 @@ whiptail --title "Raspi2png Installer" --msgbox "This script will install raspi2
 if (whiptail --title "Install raspi2png" --yesno "Choose Yes to install and No to cancel." 12 60) then
     #echo "You chose Yes. Exit status was $?."
     sudo apt-get install libpng12-dev
-    #mkdir raspi2png
-	#cd raspi2png
+    mkdir raspi2png
+	cd raspi2png
 	wget https://github.com/AndrewFromMelbourne/raspi2png/archive/master.zip
 	unzip -j master.zip
-	cp ./raspi2png/raspi2png /usr/bin/
+	cp raspi2png /usr/bin/
 	chmod +x /usr/bin/raspi2png
 	
 	whiptail --title "Installation complete" --msgbox "To take a screenshot 
